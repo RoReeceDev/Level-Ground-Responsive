@@ -1,0 +1,663 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px 2.5%;
+
+}
+
+/* section, header, footer, main, div{ 
+  border: 1px solid red;
+ } */
+
+.main-1, .main-2, .main-3, .main-4{
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+
+
+.main-3a, .main-3b{
+  width: 48%;
+  float: left;
+  margin: 1px 1%;
+}
+
+
+
+.back-img {
+  width: 85%;
+  height: 260px;
+  background: rgb(102, 118, 138);
+  margin: 0px 8%;
+}
+
+.main-3a h3, .main-3a p, .main-3a form, .header-mid{
+  text-align: center;
+}
+
+.footer-bot, .footer-top{
+  background: rgb(22, 31, 42);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+header, footer, main, main section {
+  width: 100%;
+}
+
+.header-left, .header-mid, .header-right{
+  float: left;
+}
+
+.header-left{
+  width: 47.5%;
+  padding-top: 6px;
+}
+
+.header-mid{
+  width: 5%;
+}
+
+.header-right{
+  width: 47.5%;
+}
+
+
+
+
+header {
+
+}
+
+footer {
+  width: 100%;
+  color: white;
+
+}
+
+.social{
+  width: 100%;
+}
+
+.social li, .foot-topa li{
+  display: inline-block;
+  margin-right: 6%;
+  font-size: 1.2rem;
+}
+
+footer ul, .header-left ul{
+  list-style: none;
+}
+
+.footer-top, .footer-bot{
+  width: 100%;
+}
+
+.foot-topa, .foot-topb, .spacer, .footer-top, .footer-bot{
+  float: left
+}
+
+.foot-topb, .foot-topa{
+  width: 20%;
+}
+
+.spacer{
+  width: 60%;
+  height: 100px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+.blue-back{
+  background: rgb(102, 118, 138);
+}
+
+.main-1{
+  color: white;
+  padding: 0px 9.5%;
+}
+
+.main-1 h1{
+  font-size: 8.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 75px
+}
+
+.main-1 p{
+  font-size: 2.5rem;
+  margin: 30px 16%;
+}
+
+.header-left li{
+  text-transform: uppercase;
+  color: white;
+  float: left;
+  font-size: 1.6rem;
+  margin: 0px 3%;
+}
+
+.header-mid img{
+  width: 50%;
+  height: 37px;
+}
+
+.header-right{
+  text-align: right;
+  padding-right: 2%;
+}
+
+.donate{
+  color: rgb(102, 118, 138);
+  height: 35px;
+  width: 10%;
+  background-color: white;
+  border-radius: 10%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.play{
+  width: 10%;
+  margin-right: 2%;
+  float: left;
+  text-align: center;
+}
+.main-1 span{
+  font-size: 2.7rem;
+  display: block;
+  width: 75%;
+  text-align: center;
+  margin-top: 2px;
+  padding-right: 17%;
+  font-weight: 300;
+}
+
+.video{
+  width: 25%;
+  margin-left: 43%;
+  margin-bottom: 14%;;
+  text-align: center;
+}
+
+
+
+.main-2 h2, .main-4 h2{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main-2 p, .main-4 p{
+  font-size: 1.6rem;
+  line-height: 22px;
+
+}
+
+.main-4 p{
+  margin-bottom: 35px;
+}
+
+.main-2{
+  padding: 120px 34%;
+}
+
+.main-4{
+  padding: 130px 35%;
+
+}
+
+.main-3{
+  background: rgb(219, 223, 226);
+  padding: 193px 19%;
+}
+
+.main-3a, .main-3b{
+  margin: 1px 1%;
+}
+
+.main-3b h3, .main-3a h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main-3b p, .main-3a p{
+  font-size: 1.4rem;
+  line-height: 18px;
+  margin-bottom: 35px;
+}
+
+
+.hire-class{
+  height: 55px;
+  width: 35%;
+  background: rgb(219, 223, 226);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid rgb(191, 193, 194);
+}
+
+.volunteer{
+  height: 55px;
+  width: 35%;
+  background: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid rgb(191, 193, 194);
+
+}
+
+.social{
+  padding: 0;
+}
+
+.social img{
+  width: 100%;
+  height: 35px;
+}
+
+.social li{
+  margin-right: 3%;
+}
+
+.foot-topa ul{
+  Float: left;
+  width: 100%;
+  padding: 0;
+}
+
+.footer-bot h5, .footer-top h5{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+
+.foot-topa h5{
+  Float: left;
+  width: 100%;
+  margin: 0;
+  color: rgb(55, 66, 81);
+}
+
+.foot-topb p{
+  font-size: 1.2rem;
+}
+
+.foot-topb{
+  padding-left: 9%;
+}
+
+.foot-topb p{
+  margin: 3px 0%;
+  font-weight: 300;
+}
+
+.foot-topb span{
+  font-weight: 500;
+}
+
+
+.level{
+  margin-top: 25px;
+  margin-bottom: 1px;
+}
+
+.mixed {
+  margin: 0;
+}
+
+.foot-topb h5+h5+p{
+  margin-top: 12px;
+}
+
+
+
+
+
+
+
+.foot-bota, .foot-botb{
+  float: left;
+  border-top: 1px solid white;
+}
+
+.foot-bota{
+  width: 75%;
+  font-size: 1.5rem;
+}
+
+.foot-botb{
+  width: 25%;
+  text-align: right;
+}
+
+.footer-bot, .footer-top{
+  padding: 1px 1%;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1692px) {
+
+  html{
+    font-size: 56.25%;
+  }
+  .main-1 span {
+    width: 80%;
+  }
+}
+
+
+
+@media screen and (max-width: 1406px) { 
+  .html{
+    font-size: 50%;
+  }
+
+  .main-4 {
+    padding: 130px 30%;
+  }
+
+  .main-3 {
+    padding: 193px 15%;
+  }
+
+  .main-2 {
+    padding: 120px 30%;
+  }
+
+}
+
+@media screen and (max-width: 1375px) { 
+  .html{
+    font-size: 43.75%;
+  }
+
+  .main-4 {
+    padding: 130px 20%;
+  }
+
+  .main-3 {
+    padding: 193px 10%;
+  }
+
+  .main-2 {
+    padding: 120px 20%;
+  }
+
+  .main-1 span {
+    width: 85%;
+  }
+
+  .donate {
+    width: 20%;
+  }
+
+}
+
+@media screen and (max-width: 1251px) { 
+  .main-1 span {
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 1247px) { 
+  html{
+    font-size: 37.5%;
+  }
+
+  .main-1 span {
+    width: 75%;
+  }
+
+  .main-2 p, .main-4 p {
+    font-size: 2.8rem;
+  }
+
+  .main-2 h2, .main-4 h2 {
+    font-size: 6rem;
+  }
+
+  .main-3b h3, .main-3a h3 {
+    font-size: 3.5rem;
+  }
+
+  .main-3b p, .main-3a p {
+    font-size: 2.7rem;
+  }
+
+  .volunteer, .hire-class {
+    font-size: 2.5rem;
+    width: 25%;
+  }
+
+  .foot-topb p {
+    font-size: 1.5rem;
+  }
+
+  .footer-bot h5, .footer-top h5 {
+    font-size: 1.6rem;
+  }
+
+  .foot-bota {
+    font-size: 1.7rem;
+  }
+
+  .social li, .foot-topa li {
+    font-size: 1.5rem;
+  }
+
+  .donate {
+    width: 20%;
+  }
+
+  .header-mid img {
+    width: 75%;
+  }
+
+  .header-left li {
+    font-size: 2.3rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1015px) {
+  .main-1 span {
+    width: 80%;
+  }
+
+  .main-3 {
+    padding: 193px 5%;
+  }
+
+}
+
+@media screen and (max-width: 915px) {
+  html{
+    font-size: 31.25%;
+  }
+
+  .main-2 {
+    padding: 120px 15%;
+  }
+
+  .main-3 {
+    padding: 193px 0%;
+  }
+
+  .main-4 {
+    padding: 130px 15%;
+  }
+
+  .main-3 {
+    padding: 130px 0%;
+  }
+
+
+}
+
+@media screen and (max-width: 763px) {
+  html{
+    font-size: 25%;
+  }
+
+  .main-2 {
+    padding: 120px 10%;
+  }
+
+  .main-4 {
+    padding: 130px 10%;
+  }
+
+  .foot-topb p {
+    font-size: 1.9rem;
+  }
+
+  .footer-bot h5, .footer-top h5 {
+    font-size: 2rem;
+  }
+
+  .foot-bota {
+    font-size: 2.1rem;
+  }
+
+  .social li, .foot-topa li {
+    font-size: 1.9rem;
+  }
+
+  .foot-topb {
+    padding-left: 5%;
+  }
+
+  .main-2 p, .main-4 p {
+    font-size: 3.4rem;
+  }
+
+  .main-3b h3, .main-3a h3 {
+    font-size: 3.9rem;
+  }
+
+  .main-2 h2, .main-4 h2 {
+    font-size: 6.7rem;
+  }
+
+  .main-1 p {
+    font-size: 3.7rem;
+    margin: 30px 10%;
+  }
+
+  .header-left li {
+    font-size: 3rem;
+  }
+
+  .donate {
+    font-size: 2.5rem;
+  }
+
+  .header-mid img {
+    width: 100%;
+  }
+
+  .main-3a, .main-3b {
+    width: 70%;
+  }
+
+  .main-3a, .main-3b {
+    margin: 15px 15%;
+  }
+
+  .donate {
+    width: 20%;
+}
+
+
+
+}
+
+@media screen and (max-width: 645px){
+  .social img {
+    width: 95%;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 611px){
+  .main-1 span {
+    width: 85%;
+  }
+
+  .foot-topb {
+    padding-left: 2%;
+  }
+}
+
+@media screen and (max-width: 555px){
+  .main-1 span {
+    width: 90%;
+  }
+
+  .main-1 {
+    color: white;
+    padding: 0px 5.5%;
+  }
+
+  .main-3b p, .main-3a p {
+    font-size: 3.2rem;
+  }
+
+  .main-3b h3, .main-3a h3 {
+    font-size: 4.4rem;
+  }
+
+}
+
+@media screen and (max-width: 504px){
+  .main-1 {
+    color: white;
+    padding: 0px 0.5%;
+  }
+}
+
+
+
+
